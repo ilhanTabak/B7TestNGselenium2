@@ -10,7 +10,26 @@ public class GetTitleAndGetUrl {
         WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
 
-        driver.navigate().to("https:\\www.eurotechstudy.com");
+        //driver.navigate().to("https:\\www.eurotechstudy.com");
+        driver.get("https://www.facebook.com");
+        String expectedTitle="Facebook – Anmelden oder Registrieren";
+
+       String realTitle=driver.getTitle();
+
+       if(realTitle.equals(expectedTitle)){
+
+           System.out.println("title ist pass");
+
+       }else{
+           System.out.println("title niicht pass");
+       }
+
+        String currentUrl = driver.getCurrentUrl();
+        System.out.println(currentUrl);
+        String pageSource = driver.getPageSource();
+        //System.out.println(pageSource);
+
+
 
     }
 }
