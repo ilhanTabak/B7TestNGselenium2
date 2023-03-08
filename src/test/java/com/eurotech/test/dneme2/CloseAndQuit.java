@@ -11,9 +11,12 @@ public class CloseAndQuit {
         driver.get("http://eurotech.study/");
         Thread.sleep(3000);
 
+
         driver.get("https:\\www.google.com");
         //Thread.sleep(2000);
         driver.quit();
+
+
 
     }
 }

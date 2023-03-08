@@ -12,6 +12,7 @@ public class WebDreiverFactory {
         WebDriver driver=null;
 
         switch (browserType.toLowerCase()){
+
             case "chrome":
                 WebDriverManager.chromedriver().setup();
                  driver=new ChromeDriver();
