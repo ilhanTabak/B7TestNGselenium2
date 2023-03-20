@@ -16,7 +16,7 @@ public class DisplayedDemo {
         WebElement startButton = driver.findElement(By.cssSelector("#start>button"));
 
         WebElement hello = driver.findElement(By.xpath("//*[.='Hello World!']"));
-        System.out.println("hello.isDisplayed() = " + hello.isDisplayed());
+        System.out.println("hello.isDisplayed() = "+hello.isDisplayed());
 
         Assert.assertFalse(hello.isDisplayed(),"Verify that Hello World! is NOT displayed");
 
