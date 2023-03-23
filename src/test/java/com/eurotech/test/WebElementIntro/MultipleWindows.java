@@ -22,7 +22,7 @@ public class MultipleWindows {
 
     @Test
     public void twoWindows(){
-        driver.get("https://the-internet.herokuapp.com/windows");
+        driver.get("https://demoqa.com/select-menu");
         WebElement clickHere = driver.findElement(By.linkText("Click Here"));
         clickHere.click();
         System.out.println(driver.getWindowHandle());
